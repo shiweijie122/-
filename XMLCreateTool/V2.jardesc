@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/uid/Desktop/XMLCreateTool.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/XMLCreateTool/V2.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=XMLCreateTool/src\/main\/java&lt;create{View.java[View" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=XMLCreateTool/src\/test\/java"/>
+        <javaElement handleIdentifier="=XMLCreateTool/src\/main\/resources"/>
+        <javaElement handleIdentifier="=XMLCreateTool/src\/main\/java"/>
+        <javaElement handleIdentifier="=XMLCreateTool/src\/test\/resources"/>
+        <file path="/XMLCreateTool/.project"/>
+        <folder path="/XMLCreateTool/target"/>
+        <file path="/XMLCreateTool/pom.xml"/>
+        <folder path="/XMLCreateTool/src"/>
+        <file path="/XMLCreateTool/.classpath"/>
+    </selectedElements>
+</jardesc>
