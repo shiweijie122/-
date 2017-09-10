@@ -19,33 +19,35 @@ import execute.ReadTxt;
 import execute.WriteXml;
 
 public class View implements ActionListener {
-	JFrame frame = new JFrame("XMLÉú³É¹¤¾ß");// ¿ò¼Ü²¼¾Ö  
-    JPanel jPanel = new JPanel();// Ñ¡Ïî¿¨²¼¾Ö  
+	JFrame frame = new JFrame("XMLï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½");// ï¿½ï¿½Ü²ï¿½ï¿½ï¿½  
+    JPanel jPanel = new JPanel();// Ñ¡ï¿½î¿¨ï¿½ï¿½ï¿½ï¿½  
     Container con = new Container();//  
-    JLabel label1 = new JLabel("µ¼ÈëÎÄ¼þ");  
-    JLabel label2 = new JLabel("µ¼³öÄ¿Â¼");  
-    JTextField text1 = new JTextField();// TextField Ä¿Â¼µÄÂ·¾¶  
-    JTextField text2 = new JTextField();// ÎÄ¼þµÄÂ·¾¶  
-    JButton button1 = new JButton("...");// Ñ¡Ôñ  
-    JButton button2 = new JButton("...");// Ñ¡Ôñ  
-    JFileChooser jfc = new JFileChooser();// ÎÄ¼þÑ¡ÔñÆ÷  
-    JButton button3 = new JButton("¿ªÊ¼×ª»»");// 
+    JLabel label1 = new JLabel("ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½");  
+    JLabel label2 = new JLabel("ï¿½ï¿½ï¿½ï¿½Ä¿Â¼");  
+    JTextField text1 = new JTextField();// TextField Ä¿Â¼ï¿½ï¿½Â·ï¿½ï¿½  
+    JTextField text2 = new JTextField();// ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½  
+    JButton button1 = new JButton("...");// Ñ¡ï¿½ï¿½  
+    JButton button2 = new JButton("...");// Ñ¡ï¿½ï¿½  
+    JFileChooser jfc = new JFileChooser();// ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½  
+    JButton button3 = new JButton("ï¿½ï¿½Ê¼×ªï¿½ï¿½");// 
     ReadTxt rt = new ReadTxt();
 	WriteXml wx = new WriteXml();
 	
+	
+	
 	View(){
-		jfc.setCurrentDirectory(new File("e://"));// ÎÄ¼þÑ¡ÔñÆ÷µÄ³õÊ¼Ä¿Â¼¶¨ÎªdÅÌ  
+		jfc.setCurrentDirectory(new File("e://"));// ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ê¼Ä¿Â¼ï¿½ï¿½Îªdï¿½ï¿½  
         
         double lx = Toolkit.getDefaultToolkit().getScreenSize().getWidth();  
           
         double ly = Toolkit.getDefaultToolkit().getScreenSize().getHeight();  
           
-        frame.setLocation(new Point((int) (lx / 2) - 150, (int) (ly / 2) - 150));// Éè¶¨´°¿Ú³öÏÖÎ»ÖÃ
+        frame.setLocation(new Point((int) (lx / 2) - 150, (int) (ly / 2) - 150));// ï¿½è¶¨ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½Î»ï¿½ï¿½
               
-        frame.setSize(360, 250);// Éè¶¨´°¿Ú´óÐ¡  
-        frame.setVisible(true);// ´°¿Ú¿É¼û  
-        //frame.setAlwaysOnTop(true);  //ÉèÖÃ×ÜÊÇÔÚ×îÉÏÃæ
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Ê¹ÄÜ¹Ø±Õ´°¿Ú£¬½áÊø³ÌÐò  
+        frame.setSize(360, 250);// ï¿½è¶¨ï¿½ï¿½ï¿½Ú´ï¿½Ð¡  
+        frame.setVisible(true);// ï¿½ï¿½ï¿½Ú¿É¼ï¿½  
+        //frame.setAlwaysOnTop(true);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Ê¹ï¿½Ü¹Ø±Õ´ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
         frame.add(con);
         label1.setBounds(40, 20, 70, 20);  
         text1.setBounds(105, 20, 120, 20);  
@@ -54,9 +56,9 @@ public class View implements ActionListener {
         text2.setBounds(105, 55, 120, 20);  
         button2.setBounds(240, 55, 50, 20);  
         button3.setBounds(105, 90, 120, 40);  
-        button1.addActionListener(this); // Ìí¼ÓÊÂ¼þ´¦Àí  
-        button2.addActionListener(this); // Ìí¼ÓÊÂ¼þ´¦Àí  
-        button3.addActionListener(this); // Ìí¼ÓÊÂ¼þ´¦Àí  
+        button1.addActionListener(this); // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½  
+        button2.addActionListener(this); // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½  
+        button3.addActionListener(this); // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½  
         con.add(label1);  
         con.add(text1);  
         con.add(button1);  
@@ -69,29 +71,29 @@ public class View implements ActionListener {
 	}
 	
 	/**
-	 * ÊÂ¼þ¼àÌýµÄ·½·¨
+	 * ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
 	 */
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource().equals(button1)) {// ÅÐ¶Ï´¥·¢·½·¨µÄ°´Å¥ÊÇÄÄ¸ö  
-            jfc.setFileSelectionMode(0);// Éè¶¨Ö»ÄÜÑ¡Ôñµ½ÎÄ¼þ
-            int state = jfc.showOpenDialog(null);// ´Ë¾äÊÇ´ò¿ªÎÄ¼þÑ¡ÔñÆ÷½çÃæµÄ´¥·¢Óï¾ä  
+		if (e.getSource().equals(button1)) {// ï¿½Ð¶Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½Å¥ï¿½ï¿½ï¿½Ä¸ï¿½  
+            jfc.setFileSelectionMode(0);// ï¿½è¶¨Ö»ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ä¼ï¿½
+            int state = jfc.showOpenDialog(null);// ï¿½Ë¾ï¿½ï¿½Ç´ï¿½ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
             if (state == 1) {  
                 return;  
             } else {  
-                File f = jfc.getSelectedFile();// fÎªÑ¡Ôñµ½µÄÎÄ¼þ 
+                File f = jfc.getSelectedFile();// fÎªÑ¡ï¿½ñµ½µï¿½ï¿½Ä¼ï¿½ 
                 ReadTxt.inPath=f.getAbsolutePath();
                // System.out.println(f.getAbsolutePath());
                 text1.setText(f.getAbsolutePath());  
             }  
         }  
-        // °ó¶¨µ½Ñ¡ÔñÎÄ¼þ£¬ÏÈÔñÎÄ¼þÊÂ¼þ  
+        // ï¿½ó¶¨µï¿½Ñ¡ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Â¼ï¿½  
         if (e.getSource().equals(button2)) {  
-            jfc.setFileSelectionMode(1);// Éè¶¨Ö»ÄÜÑ¡Ôñµ½ÎÄ¼þ¼Ð    
-            int state = jfc.showOpenDialog(null);// ´Ë¾äÊÇ´ò¿ªÎÄ¼þÑ¡ÔñÆ÷½çÃæµÄ´¥·¢Óï¾ä  
+            jfc.setFileSelectionMode(1);// ï¿½è¶¨Ö»ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½    
+            int state = jfc.showOpenDialog(null);// ï¿½Ë¾ï¿½ï¿½Ç´ï¿½ï¿½Ä¼ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
             if (state == 1) {  
-                return;// ³·ÏúÔò·µ»Ø  
+                return;// ï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½  
             } else {  
-                File f = jfc.getSelectedFile();// fÎªÑ¡Ôñµ½µÄÄ¿Â¼
+                File f = jfc.getSelectedFile();// fÎªÑ¡ï¿½ñµ½µï¿½Ä¿Â¼
                 WriteXml.outPath=f.getAbsolutePath();
                // System.out.println(f.getAbsolutePath());
                 text2.setText(f.getAbsolutePath()); 
@@ -101,8 +103,8 @@ public class View implements ActionListener {
         if (e.getSource().equals(button3)) { 
         	rt.read();
         	wx.write();
-            // µ¯³ö¶Ô»°¿ò¿ÉÒÔ¸Ä±äÀïÃæµÄ²ÎÊý¾ßÌåµÃ¿¿´ó¼Ò×Ô¼ºÈ¥¿´£¬Ê±¼äºÜ¶Ì  
-            JOptionPane.showMessageDialog(null, "ÎÄ¼þ×ª»»Íê³É!", "ÌáÊ¾", 2);  
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½Ô¸Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½È¥ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ü¶ï¿½  
+            JOptionPane.showMessageDialog(null, "ï¿½Ä¼ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½!", "ï¿½ï¿½Ê¾", 2);  
         }  
 
 	}
@@ -112,14 +114,14 @@ public class View implements ActionListener {
 		
 		/*JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
-		JButton b = new JButton("°´Å¥");
+		JButton b = new JButton("ï¿½ï¿½Å¥");
 		panel.add(b);
 		frame.add(panel);
 		
-		frame.setVisible(true);// ´°¿Ú¿É¼û  
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Ê¹ÄÜ¹Ø±Õ´°¿Ú£¬½áÊø³ÌÐò
-        frame.setLocationRelativeTo(null); //ÉèÖÃ¾ÓÖÐÏÔÊ¾
-        frame.setSize(200,200); //ÉèÖÃ´óÐ¡
+		frame.setVisible(true);// ï¿½ï¿½ï¿½Ú¿É¼ï¿½  
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Ê¹ï¿½Ü¹Ø±Õ´ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        frame.setLocationRelativeTo(null); //ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+        frame.setSize(200,200); //ï¿½ï¿½ï¿½Ã´ï¿½Ð¡
 */
 	}
 
