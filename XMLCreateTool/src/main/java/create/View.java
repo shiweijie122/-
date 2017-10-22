@@ -34,7 +34,7 @@ public class View implements ActionListener {
 	WriteXml wx = new WriteXml();
 	
 
-	//shihihihi
+	//user2修改的
 	//user1修改的
 
 	
