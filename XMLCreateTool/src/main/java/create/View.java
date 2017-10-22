@@ -36,7 +36,7 @@ public class View implements ActionListener {
 
 	//user2修改的
 	//user1修改的
-	//user1修改的
+	//user1
 
 	
 	View(){
