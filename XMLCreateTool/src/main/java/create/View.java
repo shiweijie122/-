@@ -34,6 +34,7 @@ public class View implements ActionListener {
 	WriteXml wx = new WriteXml();
 	
 	//shihihihi
+	//Hello World
 	
 	View(){
 		jfc.setCurrentDirectory(new File("e://"));// �ļ�ѡ�����ĳ�ʼĿ¼��Ϊd��  
