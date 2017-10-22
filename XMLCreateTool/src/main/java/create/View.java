@@ -35,7 +35,7 @@ public class View implements ActionListener {
 	
 
 	//shihihihi
-	//Hello World
+	//user1修改的
 
 	
 	View(){
