@@ -33,12 +33,10 @@ public class View implements ActionListener {
     ReadTxt rt = new ReadTxt();
 	WriteXml wx = new WriteXml();
 	
-<<<<<<< HEAD
-	
-=======
+
 	//shihihihi
 	//Hello World
->>>>>>> c5c77447e3f91c7125bc38bbcfc7e70eb6d7a5b8
+
 	
 	View(){
 		jfc.setCurrentDirectory(new File("e://"));// �ļ�ѡ�����ĳ�ʼĿ¼��Ϊd��  
